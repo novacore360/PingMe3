@@ -118,7 +118,6 @@ class AuthRepository {
             }
             Unit
         }
-        }
 
     // Convert raw Supabase exceptions into friendly messages
     private fun <T> Result<T>.mapError(): Result<T> = this.recoverCatching { e ->
